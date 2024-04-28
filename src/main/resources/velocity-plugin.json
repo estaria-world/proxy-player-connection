@@ -1,0 +1,10 @@
+{
+  "id": "proxy-player-connection",
+  "name": "proxy-player-connection",
+  "version": "1.0.1",
+  "authors": [
+    "MrManHD"
+  ],
+  "dependencies": [],
+  "main": "world.estaria.proxy.player.connection.plugin.VelocityPlugin"
+}
