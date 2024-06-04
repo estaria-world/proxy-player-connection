@@ -51,7 +51,7 @@ dependencies {
     // estaria dependencies
     compileOnly("world.estaria:kube-configmap-kit:1.0.4")
     compileOnly("world.estaria:proxy-manager-api:1.0.1")
-    compileOnly("world.estaria:server-manager-api:1.0.1")
+    compileOnly("world.estaria:server-manager-api:1.0.2")
 
     // velocity dependencies
     compileOnly("com.velocitypowered:velocity-api:3.1.1")
