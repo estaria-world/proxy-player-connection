@@ -14,7 +14,10 @@ class FallbackServerManager(
 ) {
 
     fun getFallbackLobbyServer(): Optional<RegisteredServer> {
-        val lobbyServer = ServerManagerApi.instance.serverManager.getLobbyServers()
+        val lobbyServers = ServerManagerApi.instance.serverManager.getLobbyServers()
+        if (lobbyServers.isEmpty())
+            return Optional.ofNullable(null)
+        val lobbyServer = lobbyServers
             .sortedBy { it.getOnlineCount() }
             .random()
         return this.proxyServer.getServer(lobbyServer.getName())
