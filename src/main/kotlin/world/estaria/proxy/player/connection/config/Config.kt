@@ -16,12 +16,4 @@ class Config(
         return this.disconnectReasons.first { it.type == type }.message
     }
 
-    object Default {
-        fun get(): Config {
-            return Config(
-                DisconnectReason.Type.entries.map { DisconnectReason(it, "") }
-            )
-        }
-    }
-
 }
