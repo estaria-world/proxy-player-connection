@@ -3,7 +3,7 @@ package world.estaria.proxy.player.connection.listener
 import com.velocitypowered.api.event.Subscribe
 import com.velocitypowered.api.event.connection.PreLoginEvent
 import world.avionik.minecraft.common.extension.text
-import world.estaria.proxy.player.connection.config.ConfigMapHandler
+import world.estaria.proxy.player.connection.config.ConfigHandler
 import world.estaria.proxy.player.connection.disconnect.DisconnectReason
 
 /**
@@ -11,7 +11,7 @@ import world.estaria.proxy.player.connection.disconnect.DisconnectReason
  */
 
 class PreLoginListener(
-    private val configMapHandler: ConfigMapHandler
+    private val configMapHandler: ConfigHandler
 ) {
 
     @Subscribe
